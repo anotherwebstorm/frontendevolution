@@ -1,0 +1,110 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@font-face {
+	font-family: 'League Gothic';
+	src: url('../../lib/font/league_gothic-webfont.eot');
+	src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/league_gothic-webfont.woff') format('woff'),
+		 url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
+		 url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+// Override theme settings (see ../template/settings.scss)
+$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( rgba(28,30,32,1), rgba(85,90,95,1) );
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+// CUSTOM STYLES ------------------------------
+img{
+	border:0 !important;
+	background:none !important;
+	box-shadow:none!important;
+	&.with-border{
+		border:10px solid #242423 !important;
+	}
+}
+
+.with-shadow{
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.with-yellow-bg{
+	background: #ffb718;
+}
+
+.with-yellow-font{
+	color: #ffb718;
+}
+
+.reveal a:not(.image) {
+	color: #ffb718;
+	&:hover{
+		color: #FFFFFF;
+	}
+}
+
+q{
+	font-size: 55px !important;
+	line-height: 60px !important;
+}
+
+.margin-top-30{
+	margin-top: 30px !important;
+}
+
+.margin-top-70{
+	margin-top: 70px !important;
+}
+
+ul{
+	&.yellow-list{
+		li {
+  		color: #ffb718; /* bullet color */
+		}
+		li span {
+		  color: white; /* text color */
+		}
+	}
+}
+
+div.half-col{
+	width:50%;
+	float: left;
+	&.less-font{
+		font-size: 21px;
+		line-height: 24px;
+	}
+	img{
+		width:100%;
+	}
+}
+
+// ---------------------------------------------

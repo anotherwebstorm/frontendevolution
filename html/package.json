@@ -1,0 +1,23 @@
+{
+  "name": "FRONTENDEVOLUTION",
+  "version": "0.0.1",
+  "homepage": "http://www.thesecretlab.nl",
+  "subdomain": "frontendevolution",
+  "author": {
+    "name": "The Secret Lab",
+    "email": "info@thesecretlab.nl",
+    "web": "http://www.thesecretlab.nl"
+  },
+  "engines": {
+    "node": "~0.10.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-cssmin": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-zip": "~0.7.0",
+    "grunt": "~0.4.0"
+  }
+}
